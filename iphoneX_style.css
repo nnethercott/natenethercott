@@ -1,0 +1,189 @@
+/*HOME PAGE*/
+.prompt{
+  display:inline-flex;
+}
+
+/*PROJECT PAGE*/
+.nav img{
+  margin-left:6px;
+}
+
+.nav-items, .connect, .spacing{
+  display:none;
+}
+.container{
+  grid-template-columns: 1fr;
+  margin:0
+}
+.nav{
+  display:transparent;
+}
+
+.img-description{
+  opacity:1;
+}
+
+/*BURGER MENU STYLE*/
+.menu-btn{
+  position:relative;
+  display:flex;
+  width:40px;
+  height:40px;
+  cursor:pointer;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  transition: all 0.5s ease;
+}
+
+.menu-btn__burger{
+  position:relative;
+  width:20px;
+  height:3px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after{
+  position:relative;
+  display:flex;
+  content:'';
+  min-width:20px;
+  min-height:3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.menu-btn__burger::before{
+  transform: translateY(-7px);
+}
+.menu-btn__burger::after{
+  transform: translateY(4px);
+}
+
+/*BURGER ANIMATION*/
+.menu-btn.open .menu-btn__burger{
+  transform:translateX(-40px);
+  background:transparent;
+}
+.menu-btn.open .menu-btn__burger::before{
+  transform:rotate(45deg) translate(30px, -27px);
+}
+.menu-btn.open .menu-btn__burger::after{
+  transform:rotate(-45deg) translate(28.6px, 27.5px);
+}
+
+.burger-list{
+  position:absolute;
+  display:block;
+  min-width:100%;
+  min-height:100%;
+  right:0;
+  top:50px;
+  pointer-events: none;
+}
+
+.burger-list.open{
+  display:block;
+}
+
+.burger-list__ul{
+  position:relative;
+  list-style: none;
+  text-align: left;
+  transform:translateX(500px);
+  opacity:1;
+  transition:all 0.3s ease;
+  display:flex;
+  flex-direction: column;
+}
+
+.burger-list__ul.open{
+  transform: translateX(264px);
+  opacity:1;
+}
+
+.burger-list__ul.open li:hover{
+  background-color: white;
+  color:black;
+  cursor:pointer;
+}
+
+.burger-list__ul__li{
+  font-weight: 600;
+  font-size:0.8rem;
+  padding:10px;
+  margin: 3px 10px;
+  border: 3px solid white;
+  color:white;
+  width:80px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  opacity:1;
+}
+
+.burger-list__ul__li a{
+  color:inherit;
+}
+
+/*INDIVIDUAL PROJECT*/
+#project-sample{
+  display:block;
+  min-height:50px;
+}
+
+.grid{
+  grid-template-columns: 1fr;
+  width:90%;
+  margin:0 auto;
+  padding:0;
+}
+
+.cell{
+  width:100%;
+  margin:0;
+  margin-bottom: 28px;
+}
+
+#_3d{
+  display:none;
+}
+
+#floating-br{
+  display:none;
+}
+
+.horizontal-bar{
+  display:block;
+  margin-bottom: 28px;
+  width:90%;
+}
+
+.read-more{
+  min-width:90%;
+  margin:0 auto;
+}
+
+#explained{
+  width:100%;
+}
+
+/*ABOUT*/
+#about-container{
+  grid-gap:0;
+  width:90%;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+
+.about-card{
+  width:100%;
+}
+
+/*accounts for the long naruto image*/
+.about-card img{
+  max-width: 375px;
+}

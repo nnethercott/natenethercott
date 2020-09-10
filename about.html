@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" media = "only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait)" href="./iphoneX_style.css">
+
+  <link rel="stylesheet" media ="only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)" href="./iphoneX_style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <!-- jQuery 1.8 or later, 33 KB -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <link rel="icon" href="./static/logo_green.svg">
+  <title>NATe NETHERCOTT - About</title>
+</head>
+<body>
+  <div class="blanket">
+    <img src="./media/logo.svg" alt="" class = "logo">
+  </div>
+  <header>
+    <nav class = "nav">
+      <a href="./project_home.html"><img src="./media/logo_white.svg" alt=""></a>
+      <ul class = "nav-items">
+        <li class="nav-item"><a href="./index.html">Home</a></li>
+        <li class="nav-item"><a href="./project_home.html">Projects</a></li>
+        <li class="nav-item"><a href="./about.html">About</a></li>
+      </ul>
+      <div class="connect">
+        <a href="https://github.com/nnethercott" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nate-nethercott-99b546176/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+      </div>
+      <div class="burger-list">
+        <ul class = "burger-list__ul">
+          <li class="burger-list__ul__li"><a href="./index.html">Home</a></li>
+          <li class = "burger-list__ul__li"><a href="./project_home.html">Projects</a></li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+  <div class="spacing" id = 'project-sample'></div>
+
+  <div class="container" id="about-container">
+    <div class="about-card"><img src="https://media.giphy.com/media/26h0rcFBZRm2epqA8/giphy.gif"></div>
+    <div class="about-card text" style="justify-content:center;align-items:center;flex-direction:row">
+      <p>
+        NATe NETHERCOTT
+      </p>
+    </div>
+    <div class="about-card"><img src="https://media.giphy.com/media/xTiTnDweBauh1kaQcU/giphy.gif" alt=""></div>
+    <div class="about-card text">
+      <p>
+        Hei! I'm a fourth year engineering student at Queen's University.  That's kind of vague.  I study mathematics
+        and mechanical engineering in a program called Applied Mechanics. Soon I'll have graduated and I guess by that time I'll no longer be in fourth year.
+      </p>
+      <br>
+      <p>
+        I love working on technical projects which rely on fundamental ideas in engineering and being able to convert them
+        into tangible applications.  I made this website as a place to share these sorts of projects as well as others.
+      </p>
+      <br>
+      <p>
+        A few projects I included come from my involvement on student design teams at Queen's. With these teams I've been able to work on problems ranging from building a formula-type vehicle, to
+        controlling technology with your brain.
+      </p>
+      <br>
+      <p>
+        Eventually I'd like to work on something which goes into space or travels really fast. Also energy systems are pretty cool.
+      </p>
+    </div>
+    <div class="about-card switch"><img src="https://media.giphy.com/media/3o7aCZFOhEO4b23Cfu/giphy.gif" alt=""></div>
+    <div class="about-card toggle-off"><img src="https://media.giphy.com/media/qd5BTzoPndxm0/giphy.gif" alt=""></div>
+    <div class="about-card toggle-off"><img src="https://media.giphy.com/media/KBIbL4P83hE7tZNWEw/giphy.gif" alt=""></div>
+    <div class="about-card toggle-off"><img src="https://media.giphy.com/media/Q94Bw5xaTs7b3mrNrS/giphy.gif" alt=""></div>
+    <div class="about-card toggle-on"><img src="https://media.giphy.com/media/RneIcLEosVuta/giphy.gif" alt=""></div>
+    <div class="about-card"><img src="./media/logo_white.svg" alt="" style="opacity:90%"></div>
+  </div>
+  <script src="./app.js"></script>
+  <script type="text/javascript">
+
+
+  const to_hide = $(".toggle-off").toArray();
+  const _switch = $(".switch");
+  const to_show = $(".toggle-on").toArray();
+
+  var width = document.body.offsetWidth;
+  var n;
+
+  if(width>=930){
+    n=3;
+    $(window).on("load", shuffle(event,n));
+  }
+  else if(width<930 && width>380){
+    n=2;
+
+    to_hide.forEach((e)=>{
+      $(e).css({"display":"none"});
+    })
+
+    $(window).on("load", shuffle(event,n));
+  }
+  else{
+    n=1;
+    _switch.css({"display":"none"});
+    to_hide.forEach((e)=>{
+      $(e).css({"display":"none"});
+    })
+
+    to_show.forEach((e)=>{
+      $(e).css({"display":"block"});
+    })
+  }
+
+  function shuffle(e, cols){
+    var cards = $( ".about-card" ).toArray();
+
+    //trim the cards array to get rid of stuff thats not shown
+    cards.forEach((c)=>{
+      if($(c).css("display")=="none"){
+        delete cards[cards.indexOf(c)];
+      }
+    })
+
+    //random shuffle
+    const cards_shuffled = cards.sort(() => Math.random() - 0.5);
+
+    //iterate through and re-assign position
+    cards_shuffled.forEach((card)=>{
+      var index = cards_shuffled.indexOf(card);
+
+      col_start = index % cols + 1;
+      col_end = col_start + 1;
+      row_start = Math.ceil(index/cols);
+      row_end = row_start + 1;
+
+      $(card).css("grid-column", col_start.toString() + '/' + col_end.toString());
+      $(card).css("grid-row", row_start.toString() + '/' + row_end.toString());
+    })
+  }
+  </script>
+</body>
+</html>

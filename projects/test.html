@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+
+  <link href="./JinJunho-Madeleine/src/css/Madeleine.css" rel="stylesheet">
+  <script src="./JinJunho-Madeleine/src/lib/stats.js"></script>
+  <script src="./JinJunho-Madeleine/src/lib/detector.js"></script>
+  <script src="./JinJunho-Madeleine/src/lib/three.min.js"></script>
+  <script src="./JinJunho-Madeleine/src/Madeleine.js"></script>
+
+  <title>NATe NETHERCOTT</title>
+  <style media="screen">
+    body{
+      background:black;
+    }
+    .madeleine{
+      position:relative;
+      left:calc(50% - 320px);
+    }
+  </style>
+</head>
+<body>
+  <div id="target" class="madeleine" style="width:640px"></div>
+
+  <script>
+  window.onload = function(){
+      var madeleine = new Madeleine({
+        target: 'target', // target div id
+        data: 'wingsting.stl', // data path
+        path: './JinJunho-Madeleine/src',
+      });
+      madeleine.options.objectColor = "#fcdf42";
+      madeleine.options.material = "shiny";
+
+      //console.log(madeleine.options)
+
+  };
+  </script>
+</body>
+</html>

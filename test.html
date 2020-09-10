@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link href="./projects/JinJunho-Madeleine/src/css/Madeleine.css" rel="stylesheet">
+    <script src="./projects/JinJunho-Madeleine/src/lib/stats.js"></script>
+    <script src="./projects/JinJunho-Madeleine/src/lib/detector.js"></script>
+    <script src="./projects/JinJunho-Madeleine/src/lib/three.min.js"></script>
+    <script src="./projects/JinJunho-Madeleine/src/Madeleine.js"></script>
+  </head>
+  <body>
+    <div id="target" style="width:640px"></div>
+
+    <script>
+      window.onload = function(){
+        //<div id="target" class="madeleine" style="width:640px"></div>
+          var madeleine = new Madeleine({
+            target: 'target', // target div id
+            data: './static/wingsting.stl', // data path
+            path: './projects/JinJunho-Madeleine/src',
+          });
+          //green: #6dff29
+          madeleine.options.objectColor = "#fc42f5";
+          madeleine.options.material = "shiny";
+          //console.log(madeleine.options)
+      };
+
+    </script>
+  </body>
+</html>
