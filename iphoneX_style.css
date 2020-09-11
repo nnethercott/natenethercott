@@ -104,7 +104,7 @@
 }
 
 .burger-list__ul.open{
-  transform: translateX(70%);
+  transform: translateX(72%);
   opacity:1;
 }
 
@@ -117,7 +117,7 @@
 .burger-list__ul__li{
   font-weight: 600;
   font-size:1rem;
-  padding:10px;
+  padding:12px 24px;
   margin: 3px 10px;
   border: 3px solid white;
   color:white;
