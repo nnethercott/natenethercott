@@ -102,7 +102,7 @@
 }
 
 .burger-list__ul.open{
-  transform: translateX(264px);
+  transform: translateX(280px);
   opacity:1;
 }
 
