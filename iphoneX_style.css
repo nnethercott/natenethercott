@@ -94,7 +94,7 @@
   position:relative;
   list-style: none;
   text-align: left;
-  transform:translateX(500px);
+  transform:translateX(110%);
   opacity:1;
   transition:all 0.3s ease;
   display:flex;
@@ -102,7 +102,7 @@
 }
 
 .burger-list__ul.open{
-  transform: translateX(280px);
+  transform: translateX(70%);
   opacity:1;
 }
 
