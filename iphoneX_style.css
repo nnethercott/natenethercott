@@ -6,6 +6,8 @@
 /*PROJECT PAGE*/
 .nav img{
   margin-left:6px;
+  height:40px;
+  width:50px;
 }
 
 .nav-items, .connect, .spacing{
@@ -38,8 +40,8 @@
 
 .menu-btn__burger{
   position:relative;
-  width:20px;
-  height:3px;
+  width:30px;
+  height:4px;
   border-radius: 2px;
   transition: all 0.3s ease;
   background-color: white;
@@ -50,18 +52,18 @@
   position:relative;
   display:flex;
   content:'';
-  min-width:20px;
-  min-height:3px;
+  min-width:30px;
+  min-height:4px;
   background-color: white;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
 
 .menu-btn__burger::before{
-  transform: translateY(-7px);
+  transform: translateY(-10px);
 }
 .menu-btn__burger::after{
-  transform: translateY(4px);
+  transform: translateY(6.6px);
 }
 
 /*BURGER ANIMATION*/
@@ -114,7 +116,7 @@
 
 .burger-list__ul__li{
   font-weight: 600;
-  font-size:0.8rem;
+  font-size:1rem;
   padding:10px;
   margin: 3px 10px;
   border: 3px solid white;
