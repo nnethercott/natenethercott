@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./template_style.css">
+
+    <link rel="stylesheet" media="only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait)" href="../iphoneX_style.css">
+
+    <link rel="stylesheet" media="only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)" href="../iphoneX_style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="icon" href="../media/logo_green.svg">
+
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <!-- Madeleine -->
+    <link href="./JinJunho-Madeleine/src/css/Madeleine.css" rel="stylesheet">
+    <script src="./JinJunho-Madeleine/src/lib/stats.js"></script>
+    <script src="./JinJunho-Madeleine/src/lib/detector.js"></script>
+    <script src="./JinJunho-Madeleine/src/lib/three.min.js"></script>
+    <script src="./JinJunho-Madeleine/src/Madeleine.js"></script>
+
+    <title>NATe NETHERCOTT - AOA</title>
+</head>
+
+<body>
+    <div class="blanket">
+        <img src="../media/logo.svg" alt="" class="logo">
+    </div>
+    <header>
+        <nav class="nav">
+            <a href="../project_home.html"><img src="../media/logo_white.svg" alt=""></a>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="../index.html">Home</a></li>
+                <li class="nav-item"><a href="../project_home.html">Projects</a></li>
+                <li class="nav-item"><a href="../about.html">About</a></li>
+            </ul>
+            <div class="connect">
+                <a href="https://github.com/nnethercott" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/nate-nethercott-99b546176/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+            <div class="burger-list">
+                <ul class="burger-list__ul">
+                    <li class="burger-list__ul__li"><a href="../project_home.html">Projects</a></li>
+                    <li class="burger-list__ul__li"><a href="../about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="spacing" id='project-sample'></div>
+
+    <div class="grid">
+        <div class="cell" id="cell-image">
+            <div class="fotorama" data-nav="thumbs" data-thumbwidth="54.5px" data-transition="crossfade"
+                data-thumbheight="54.5px" data-click="true" data-width="100%" data-swipe="true">
+                <img src="../media/capstone_test.png">
+                <img src="../media/capstone_preprocessing.png">
+                <img src="../media/capstone_fullbrain.png">
+                <img src="../media/capstone_convergence.png">
+                <img src="../media/capstone_surface.png">s
+            </div>
+        </div>
+        <div class="cell" id="cell-bullets">
+            <div class="title">
+                <h1 class="project-name">Capstone.</h1>
+                <h1 class="project-name" style="font-size:1.2rem">2021</h1>
+            </div>
+            <br>
+            <ul>
+                <li>A brain lesion identification algorithm is derived using principles from the calculus of variations</li>
+                <li>&ndash;</li>
+                <li>A Python implementation identifies the lesion across MRI/CT slices in less than 5 minutes and notifies the specialist
+                </li>
+                <li>&ndash;</li>
+                <li>Algorithmic estimates agree with doctor-identified contours 34-77% of the time across all scans
+                </li>
+                <li>&ndash;</li>
+                <li>The design solution leverages active feedback from specialists to modify algorithm's parameters 
+                    and improve performance on the fly</li>
+                <br id="floating-br">
+            </ul>
+            <div class="organize-buttons">
+                <a href="https://github.com/nnethercott/Capstone", target="_blank"><button type="button" name="button" class="view-project" id="_3d">view on github</button>
+            </div></a>
+        </div>
+    </div>
+
+    <div class="horizontal-bar"></div>
+
+    <div class="read-more">
+        <div class="cell" id="explained">
+            <p>
+                Capstone refers to the name of the final year design project in Queen's Engineering.  The goal of this capstone project
+                was to develop a region tracking algorithm that accurately identifies brain lesion contours from given a sequence of 
+                MRI or CT scans.  Such a technology stands to benefit medical practioners and patients as expedient and reliable 
+                lesion identification allows for faster diagnoses. 
+            </p>
+            <br>
+            <p>
+                In order to solve this challenge, principles from the calculus of variations were combined with the analysis of relevant lesion properties.  
+                The challenge was formulated as a optimization 
+                problem where custom "functionals" were designed to drive the corresponding Euler-Lagrange equations
+                for the algorithm's evolution.  The algorithm converges to a 2D outline which minimizes a cost 
+                function over the MRI/CT image space and does so in a manner which satisfies the partial differential equations (PDEs) of the level set method. 
+                The shape it converges to is consequently determined to be the outline of the brain lesion. 
+            </p>
+            <br>
+            <p>
+                The algorithm was implemented in Python due its the high-level functionality and many third-party libraries for image analysis.  A pipeline was
+                created for the preprocessing of MRI/CT images in order to both reduce image complexity and facilitate identification. A flexible class structure
+                for the "contour" was written and encodes all relevant information for the dynamics while promoting code-resuability.  While the code performed the 
+                identification in the span of minutes, a late-stage implementation of the algorithm in Java offered significant time speedups which cut computation 
+                time in half compared to the Python version.
+            </p>
+            <br>
+            <p>
+                Depending on the complexity of the brain lesion in question, the dice coefficient (a measure of overlap between the algorithm's guess and the outline
+                produced by a specialist) of the algorithm ranged from 0.34 to 0.77, where 1.0 is a perfect overlap.  On average, the algorithm completed the identification
+                in a span of 5-10 seconds for images of dimension ~100x100px.
+            </p>
+            <br>
+            <p>
+                Next steps include developing a GUI to facilitate dataset imports and operation by medical specialists.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        /*
+        window.onload = function(){
+          //<div id="target" class="madeleine" style="width:640px"></div>
+            var madeleine = new Madeleine({
+              target: 'target', // target div id
+              data: '../static/wingsting.stl', // data path
+              path: './JinJunho-Madeleine/src',
+            });
+            //green: #6dff29
+            madeleine.options.objectColor = "#fc42f5";
+            madeleine.options.material = "shiny";
+            //console.log(madeleine.options)
+      
+        };
+        */
+    </script>
+    <script type="text/javascript" src="../app.js"></script>
+    <script src="./project.js"></script>
+</body>
+
+</html>
