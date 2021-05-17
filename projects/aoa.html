@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -7,13 +8,13 @@
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="./template_style.css">
 
-  <link rel="stylesheet" media = "only screen
+  <link rel="stylesheet" media="only screen
   and (min-device-width: 375px)
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait)" href="../iphoneX_style.css">
 
-  <link rel="stylesheet" media ="only screen
+  <link rel="stylesheet" media="only screen
   and (min-device-width: 375px)
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
@@ -21,13 +22,14 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="icon" href="../media/logo_green.svg">
 
   <!-- jQuery 1.8 or later, 33 KB -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <!-- Fotorama from CDNJS, 19 KB -->
-  <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
   <!-- Madeleine -->
@@ -37,43 +39,44 @@
   <script src="./JinJunho-Madeleine/src/lib/three.min.js"></script>
   <script src="./JinJunho-Madeleine/src/Madeleine.js"></script>
 
-  <title>NATe NETHERCOTT - AOA</title>
+  <title>NATE NETHERCOTT - AOA</title>
 </head>
+
 <body>
   <div class="blanket">
-    <img src="../media/logo.svg" alt="" class = "logo">
+    <img src="../media/logo.svg" alt="" class="logo">
   </div>
   <header>
-    <nav class = "nav">
+    <nav class="nav">
       <a href="../project_home.html"><img src="../media/logo_white.svg" alt=""></a>
-      <ul class = "nav-items">
+      <ul class="nav-items">
         <li class="nav-item"><a href="../index.html">Home</a></li>
         <li class="nav-item"><a href="../project_home.html">Projects</a></li>
         <li class="nav-item"><a href="../about.html">About</a></li>
       </ul>
       <div class="connect">
         <a href="https://github.com/nnethercott" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/nate-nethercott-99b546176/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/nate-nethercott-99b546176/" target="_blank"><i
+            class="fab fa-linkedin"></i></a>
       </div>
       <div class="menu-btn">
         <div class="menu-btn__burger"></div>
       </div>
       <div class="burger-list">
-        <ul class = "burger-list__ul">
-          <li class = "burger-list__ul__li"><a href="../project_home.html">Projects</a></li>
-          <li class = "burger-list__ul__li"><a href="../about.html">About</a></li>
+        <ul class="burger-list__ul">
+          <li class="burger-list__ul__li"><a href="../project_home.html">Projects</a></li>
+          <li class="burger-list__ul__li"><a href="../about.html">About</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <div class="spacing" id = 'project-sample'></div>
+  <div class="spacing" id='project-sample'></div>
 
   <div class="grid">
-    <div class="cell" id = "cell-image">
-      <div class="fotorama" data-nav="thumbs" data-thumbwidth = "54.5px"
-      data-transition="crossfade" data-thumbheight = "54.5px" data-click="true"
-      data-width="100%" data-swipe="true">
+    <div class="cell" id="cell-image">
+      <div class="fotorama" data-nav="thumbs" data-thumbwidth="54.5px" data-transition="crossfade"
+        data-thumbheight="54.5px" data-click="true" data-width="100%" data-swipe="true">
         <img src="../media/AOAm4.png">
         <img src="../media/aoa_tesselation.png">
         <img src="../media/NACA5512.svg">
@@ -82,76 +85,85 @@
         <img src="../media/aoa_printed.jpg">
       </div>
     </div>
-    <div class="cell" id = "cell-bullets">
-      <div class = "title">
-          <h1 class = "project-name">AoA.</h1>
-          <h1 class = "project-name" style="font-size:1.2rem">2019</h1>
+    <div class="cell" id="cell-bullets">
+      <div class="title">
+        <h1 class="project-name">AoA.</h1>
+        <h1 class="project-name" style="font-size:1.2rem">2019</h1>
       </div>
       <br>
       <ul>
         <li>A NACA 5512 airfoil is modelled in Catia v5 for use in angle of attack sweep simulations</li>
         <li>&ndash;</li>
-        <li>Subsonic wind tunnel testing is conducted to assess the accuracy of numerical modelling using a 3D-printed NACA 5512</li>
+        <li>Subsonic wind tunnel testing is conducted to assess the accuracy of numerical modelling using a 3D-printed
+          NACA 5512</li>
         <li>&ndash;</li>
-        <li>Java macros are written to automate manual tasks required to prepare and run CFD simulations in STAR-CCM+</li>
+        <li>Java macros are written to automate manual tasks required to prepare and run CFD simulations in STAR-CCM+
+        </li>
         <li>&ndash;</li>
         <li>Python is used in post to handle data collected from testing and simulations</li>
         <br id="floating-br">
       </ul>
       <div class="organize-buttons">
-        <a href="./aoa_model.html"><button type="button" name="button" class = "view-project" id="_3d">view 3d model</button></div></a>
+        <a href="./aoa_model.html"><button type="button" name="button" class="view-project" id="_3d">view 3d
+            model</button>
+      </div></a>
     </div>
   </div>
 
   <div class="horizontal-bar"></div>
 
   <div class="read-more">
-    <div class="cell" id = "explained">
+    <div class="cell" id="explained">
       <p>
-      AoA is a project designed to validate aero practices carried out by the Queen's University
-      Formula SAE design team.  Understanding limitations in the accuracy of commercial CFD software is an essential
-      consideration when designing a vehicle's aero package as poor aero design can make or break the car.
+        AoA is a project designed to validate aero practices carried out by the Queen's University
+        Formula SAE design team. Understanding limitations in the accuracy of commercial CFD software is an essential
+        consideration when designing a vehicle's aero package as poor aero design can make or break the car.
       </p>
       <br>
       <p>
         The choice of a NACA 5512 series airfoil was largely determined by its underlying aesthetic appeal with its
         profile generated by the NACA 4 digit airfoil generator.
-          The airfoil was extruded into a wing in Catia v5 and combined with a to-scale model of the sting support structure found
-          at the wind tunnel owned by the Royal Military College.  The result: a watertight surface compatible for importing
-          within STAR-CCM+.
+        The airfoil was extruded into a wing in Catia v5 and combined with a to-scale model of the sting support
+        structure found
+        at the wind tunnel owned by the Royal Military College. The result: a watertight surface compatible for
+        importing
+        within STAR-CCM+.
       </p>
       <br>
       <p>
-        AoA sweeps under free stream velocities of 20, 25, and 30 m/s over a range of angles from -2 deg to 16 deg were carried out
-        both in simulation and in wind tunnel testing.  STAR-CCM+ sims provided the theoretical basis for lift and drag experienced by the airfoil, while
+        AoA sweeps under free stream velocities of 20, 25, and 30 m/s over a range of angles from -2 deg to 16 deg were
+        carried out
+        both in simulation and in wind tunnel testing. STAR-CCM+ sims provided the theoretical basis for lift and drag
+        experienced by the airfoil, while
         load cell readings obtained in the tunnel using a 3D-printed NACA 5512 yielded empirical insight.
       </p>
       <br>
       <p>
         Upon comparison of the CFD model and wind tunnel data it was found that simulations faithfully captured lift
-        but had a much more difficult time predicting drag.  This is currently being investigated.
+        but had a much more difficult time predicting drag. This is currently being investigated.
       </p>
     </div>
   </div>
 
   <script>
-  /*
-  window.onload = function(){
-    //<div id="target" class="madeleine" style="width:640px"></div>
-      var madeleine = new Madeleine({
-        target: 'target', // target div id
-        data: '../static/wingsting.stl', // data path
-        path: './JinJunho-Madeleine/src',
-      });
-      //green: #6dff29
-      madeleine.options.objectColor = "#fc42f5";
-      madeleine.options.material = "shiny";
-      //console.log(madeleine.options)
-
-  };
-  */
+    /*
+    window.onload = function(){
+      //<div id="target" class="madeleine" style="width:640px"></div>
+        var madeleine = new Madeleine({
+          target: 'target', // target div id
+          data: '../static/wingsting.stl', // data path
+          path: './JinJunho-Madeleine/src',
+        });
+        //green: #6dff29
+        madeleine.options.objectColor = "#fc42f5";
+        madeleine.options.material = "shiny";
+        //console.log(madeleine.options)
+  
+    };
+    */
   </script>
-  <script type="text/javascript" src = "../app.js"></script>
+  <script type="text/javascript" src="../app.js"></script>
   <script src="./project.js"></script>
 </body>
+
 </html>

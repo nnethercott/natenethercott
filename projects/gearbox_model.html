@@ -27,6 +27,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 -->
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -35,13 +36,14 @@ SOFTWARE.
   <link rel="stylesheet" href="./template_style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="icon" href="../media/logo_green.svg">
 
   <!-- jQuery 1.8 or later, 33 KB -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <!-- Fotorama from CDNJS, 19 KB -->
-  <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
   <!-- Madeleine -->
@@ -51,59 +53,61 @@ SOFTWARE.
   <script src="./JinJunho-Madeleine/src/lib/three.min.js"></script>
   <script src="./JinJunho-Madeleine/src/Madeleine.js"></script>
 
-  <title>NATe NETHERCOTT - Gearbox</title>
+  <title>NATE NETHERCOTT - Gearbox</title>
 
   <style media="screen">
-  .back-to-project{
-    font-size:0.72rem;
-    opacity:0.82;
-    position:absolute;
-    top:570px;
-    left:860px
-  }
+    .back-to-project {
+      font-size: 0.72rem;
+      opacity: 0.82;
+      position: absolute;
+      top: 570px;
+      left: 860px
+    }
 
-  .back-to-project:hover{
-    opacity:1;
-  }
+    .back-to-project:hover {
+      opacity: 1;
+    }
   </style>
 </head>
+
 <body>
   <div class="blanket">
-    <img src="../media/logo.svg" alt="" class = "logo">
+    <img src="../media/logo.svg" alt="" class="logo">
   </div>
   <header>
-    <nav class = "nav">
+    <nav class="nav">
       <a href="../project_home.html"><img src="../media/logo_white.svg" alt=""></a>
-      <ul class = "nav-items">
+      <ul class="nav-items">
         <li class="nav-item"><a href="../index.html">Home</a></li>
         <li class="nav-item"><a href="../project_home.html">Projects</a></li>
         <li class="nav-item"><a href="../about.html">About</a></li>
       </ul>
       <div class="connect">
         <a href="https://github.com/nnethercott" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/nate-nethercott-99b546176/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/nate-nethercott-99b546176/" target="_blank"><i
+            class="fab fa-linkedin"></i></a>
       </div>
       <div class="menu-btn">
         <div class="menu-btn__burger"></div>
       </div>
       <div class="burger-list">
-        <ul class = "burger-list__ul">
-          <li class = "burger-list__ul__li"><a href="../project_home.html">Projects</a></li>
-          <li class = "burger-list__ul__li"><a href="../about.html">About</a></li>
+        <ul class="burger-list__ul">
+          <li class="burger-list__ul__li"><a href="../project_home.html">Projects</a></li>
+          <li class="burger-list__ul__li"><a href="../about.html">About</a></li>
         </ul>
       </div>
     </nav>
   </header>
-  <div class="spacing" id = 'project-sample'></div>
+  <div class="spacing" id='project-sample'></div>
 
-  <h1 class = "project-name">Gearbox.</h1>
+  <h1 class="project-name">Gearbox.</h1>
   <div id="target" class="madeleine" style="width:640px"></div>
-  <a href="./gearbox.html" class = "back-to-project">
+  <a href="./gearbox.html" class="back-to-project">
     back to project...
   </a>
 
   <script>
-  window.onload = function(){
+    window.onload = function () {
       var madeleine = new Madeleine({
         target: 'target', // target div id
         data: '../media/GearboxAssembly.stl', // data path
@@ -113,9 +117,10 @@ SOFTWARE.
       madeleine.options.objectColor = "#fc42f5";
       madeleine.options.material = "shiny";
       //console.log(madeleine.options)
-  };
+    };
   </script>
-  <script type="text/javascript" src = "../app.js"></script>
+  <script type="text/javascript" src="../app.js"></script>
   <script src="./project.js"></script>
 </body>
+
 </html>
